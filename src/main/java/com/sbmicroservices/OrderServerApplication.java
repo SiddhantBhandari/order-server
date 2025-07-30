@@ -15,6 +15,7 @@ public class OrderServerApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(OrderServerApplication.class, args);
+		System.out.println("---------------------- Order Server Application Started Successfully ---------------------");
 	}
 
 
@@ -22,5 +23,8 @@ public class OrderServerApplication {
 	public BCryptPasswordEncoder passwordEncoder(){
 		return new BCryptPasswordEncoder(20, new SecureRandom());
 	}
+
+
+
 
 }
